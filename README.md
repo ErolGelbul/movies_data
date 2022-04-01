@@ -5,9 +5,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About
 
-Analysing and presenting a 40k movie dataset. 
+Analysing and presention of a 40k movie dataset. 
 
-<!-- ABOUT THE PROJECT -->
+<!-- DATASET -->
 ## The Dataset
 
 * id: The ID of the movie (clear/unique identifier).
@@ -33,10 +33,29 @@ Analysing and presenting a 40k movie dataset.
 * director: Director of the movie.
 * crew_size: Size of the film crew (incl. director, excl. actors).
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- WALKTHROUGH -->
+## Walkthrough
+
+If you wish to go through the code and run each segment one by one, please, head over to Jupyter Notebook and open the project.
+
+Stage 1:
+
+Database is displayed and ordered by release date. Features of the database are revealed. Numerical data present in the database is displayed, such as: the movie budget, revenue, votes, popularity... 
+
+
+<div style="text-align:center"><img src="images/stage1.0.png" /></div>
+
+
+These values are presented using a histogram. This helps visualise the outliars in certain features, for instance, highest budget for a movie is 380.0 million USD whereas the mean is 21.67. There are few movies with a cast size greater than 300. It seems like the voting for all of these movies average out at 6 rating and the distribution on both ends seems distinct with the lower end appearing to be less steep compared to the upper end. Finally, by using the `df.describe(include="object")` method, we can see the amount of duplicates/missing values from the dataset. Therefore, this dataset still needs to be cleaned. It seems `Cinderella` tittle occurs 11 times, therefore potential duplicates. We can see each of these cases using `df[df.title == "Cinderellla]` to look through if these are duplicates or not.
 
 <!-- TECH -->
 ## Technologies
 
+IDE: [Jupyter Notebook](https://jupyter.org/) (Language: python3)
+
+Packages: [Numpy](https://numpy.org/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/) 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
