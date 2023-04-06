@@ -1,14 +1,14 @@
 <div id="top"></div>
 
-<div style="text-align:center"><img src="images/cover.jpg" /></div>
+<div style="text-align:center"><img src="images/cover_image.jpg" /></div>
 
 <!-- ABOUT THE PROJECT -->
-## About
+## 1. About
 
-Analysing and presention of a 40k movie dataset. 
+Analysing and presenting a 40k movie dataset. 
 
-<!-- DATASET -->
-## The Dataset
+<!-- ABOUT THE PROJECT -->
+### 1.1 The Dataset
 
 * id: The ID of the movie (clear/unique identifier).
 * title: The Official Title of the movie.
@@ -33,51 +33,64 @@ Analysing and presention of a 40k movie dataset.
 * director: Director of the movie.
 * crew_size: Size of the film crew (incl. director, excl. actors).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- WALKTHROUGH -->
-## Walkthrough
-
-If you wish to go through the code and run each segment one by one, please, head over to Jupyter Notebook and open the project.
-
-Stage 1:
-
-Database is displayed and ordered by release date. Features of the database are revealed. Numerical data present in the database is displayed, such as: the movie budget, revenue, votes, popularity... 
-
-
-<div style="text-align:center"><img src="images/stage1.0.png" /></div>
-
-
-These values are presented using a histogram. This helps visualise the outliars in certain features, for instance, highest budget for a movie is 380.0 million USD whereas the mean is 21.67. There are few movies with a cast size greater than 300. It seems like the voting for all of these movies average out at 6 rating and the distribution on both ends seems distinct with the lower end appearing to be less steep compared to the upper end. Finally, by using the `df.describe(include="object")` method, we can see the amount of duplicates/missing values from the dataset. Therefore, this dataset still needs to be cleaned. It seems `Cinderella` tittle occurs 11 times, therefore potential duplicates. We can see each of these cases using `df[df.title == "Cinderellla]` to look through if these are duplicates or not.
-
 <!-- TECH -->
-## Technologies
+### 1.2 Libraries
 
-IDE: [Jupyter Notebook](https://jupyter.org/) (Language: python3)
-
-Packages: [Numpy](https://numpy.org/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/) 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-If you would like to add any extra features to the optimisation simulation, feel free to fork and create a pull request. Thank you!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- [Pandas](https://pandas.pydata.org/)
+- [Numpy](https://numpy.org/)
+- [Matplotlib](https://matplotlib.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## 2. Findings
+
+### 2.1 Release Date
+
+<p align="center">
+  <img src="images/ss0.png">
+</p>
+
+### 2.2 Vote Average
+
+<p align="center">
+  <img src="images/ss2.png">
+</p>
+
+### 2.3 Highest Revenue
+
+<p align="center">
+  <img src="images/ss3.png">
+</p>
+
+### 2.4 Highest Budget
+
+<p align="center">
+  <img src="images/ss4.png">
+</p>
+
+### 2.5 Highest Profit
+
+<p align="center">
+  <img src="images/ss5.png">
+</p>
+
+### 2.6 Least Profit
+
+<p align="center">
+  <img src="images/ss6.png">
+</p>
+
+### 2.7 Highest Return on Investment
+
+<p align="center">
+  <img src="images/ss7.png">
+</p>
 
 
 <!-- CONTACT -->
-## Contact
+## 3. Contact
 
-Erol Gelbul - [Website](http://www.erolgelbul.com) - erolgelbul@gmail.com
+Erol Gelbul - [Website](http://www.erolgelbul.com)
 
 Project Link: [Movies' Data](https://github.com/ErolGelbul/movies_data)
 
